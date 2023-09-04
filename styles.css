@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+}
+
+body {
+  display: flex;
+  margin: 0;
+}
+
+.left {
+  height: 100vh;
+  width: 30vw;
+}
+.right {
+    display: flex;
+    flex-direction: column;
+  background-color: white;
+  height: 100vh;
+  width: 70vw;
+}
+
+img {
+  height: 100vh;
+}
