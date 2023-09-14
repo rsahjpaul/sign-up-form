@@ -8,6 +8,8 @@
   </head>
   <body>
     <div class="left">
+      <div class="banner"><h2 class="title">ODIN</h2></div>
+
       <img src="halie-west-25xggax4bSA-unsplash.jpg" />
     </div>
 
@@ -25,32 +27,63 @@
       </div>
 
       <div class="middle">
-        <form action="example.com/path" method="post">
+        <form id="registration-form">
+          <h3>Lets do this!</h3>
 
-
-            <h3>Lets do this!</h3>
-
-            <div class="test">
-              <div class="form-element"><label>FIRST NAME</label><input /></div>
-
-              <div class="form-element"><label>LAST NAME</label> <input /></div>
-
-              <div class="form-element"><label>EMAIL</label> <input /></div>
-
-              <div class="form-element"><label>PHONE NUMBER</label> <input /></div>
-
-              <div class="form-element"><label>PASSWORD</label> <input /></div>
-
-              <div class="form-element"><label>CONFIRM PASSWORD</label> <input /></div>
+          <div class="test">
+            <div class="form-element">
+              <label for="first-name">FIRST NAME</label
+              ><input type="text" name="first-name" required />
             </div>
 
+            <div class="form-element">
+              <label for="last-name">LAST NAME</label>
+              <input type="text" name="last-name" required />
+            </div>
 
+            <div class="form-element">
+              <label for="email">EMAIL</label>
+              <input type="email" name="email" required />
+            </div>
+
+            <div class="form-element">
+              <label for="number">PHONE NUMBER</label>
+              <input type="number" name="number" required />
+            </div>
+
+            <div class="form-element">
+              <label for="password">PASSWORD</label>
+              <input
+                type="password"
+                name="password"
+                id="password"
+                required
+              />
+            </div>
+
+            <div class="form-element">
+              <label for="confirm-password">CONFIRM PASSWORD</label>
+              <input
+                type="password"
+                name="confirm-password"
+                id="confirm-password"
+                required
+              />
+            </div>
+          </div>
         </form>
       </div>
 
       <div class="bottom">
         <div class="bottom-text">
-          <button class="create">Create account</button>
+          <button
+            class="create"
+            type="submit"
+            form="registration-form"
+            id="submit"
+          >
+            Create account
+          </button>
 
           <p>Already have an account? <button class="log-in">Log in</button></p>
         </div>
